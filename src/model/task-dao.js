@@ -128,9 +128,31 @@ export class TaskDao {
         })
     }
 
+    alteraStatus(id, status) {
+        return new Promise(async (resolve, reject) => {
+
+            const store = this._connection
+                .transaction([this._store], 'readwrite')
+                .objectStore(this._store)
+
+            const request = store.get(id)
+
+            request.onsuccess = e => {
+                const d = e.target.result
+                if (d) {
+                    d._status = status
+                    store.put(d, id)
+                    resolve(this._createTask(d))
+                } else {
+                    reject('Tarefa não encontrada!')
+                }
+            }
+        })
+    }
+
     listarFinalizados() {
         return new Promise((resolve, reject) => {
-            
+
             const store = this._connection
                 .transaction([this._store], 'readwrite')
                 .objectStore(this._store)

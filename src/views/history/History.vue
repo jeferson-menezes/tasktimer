@@ -77,7 +77,6 @@ export default {
 
 	data: () => ({
 		tab: null,
-		text: "ola mundo",
 	}),
 
 	computed: {
