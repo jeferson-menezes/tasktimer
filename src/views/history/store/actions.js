@@ -8,6 +8,22 @@ export const ActionSaveNote = async ({ dispatch }, payload) => {
         .adiciona(payload)
 }
 
+export const ActionListNotes = async ({ commit }, payload) => {
+    return new NoteDao(await ConnectionFactory.getConnection())
+        .listar(payload)
+}
+
+export const ActionDeleteNote = async ({ commit }, payload) => {
+    return new NoteDao(await ConnectionFactory.getConnection())
+        .excluir(payload)
+}
+
+// times
+
+export const ActionDeleteTime = async ({ commit }, payload) => {
+    return new TimeDao(await ConnectionFactory.getConnection())
+        .excluir(payload)
+}
 export const ActionSaveTime = async ({ commit }, payload) => {
     return new TimeDao(await ConnectionFactory.getConnection())
         .adiciona(payload)
@@ -15,10 +31,5 @@ export const ActionSaveTime = async ({ commit }, payload) => {
 
 export const ActionListTimes = async ({ commit }, payload) => {
     return new TimeDao(await ConnectionFactory.getConnection())
-        .listar(payload)
-}
-
-export const ActionListNotes = async ({ commit }, payload) => {
-    return new NoteDao(await ConnectionFactory.getConnection())
         .listar(payload)
 }

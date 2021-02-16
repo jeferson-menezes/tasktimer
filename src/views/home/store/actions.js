@@ -6,7 +6,10 @@ import * as types from './mutation-types';
 export const ActionGetActive = async ({ commit }, payload) => {
     return new TaskDao(await ConnectionFactory.getConnection())
         .detalharAtivo()
-        .then(doc => commit(types.SET_ACTIVE_TASK, doc))
+        .then(doc => {
+            commit(types.SET_ACTIVE_TASK, doc)
+            return doc;
+        })
 }
 
 export const ActionFilterRecenteTasks = async ({ commit }) => {

@@ -1,11 +1,12 @@
 export class Task {
 
-    constructor(nome, codigo, status, cor, data, id = null) {
+    constructor(nome, codigo, status, bg, data, color, id = null) {
         this._nome = nome;
         this._codigo = codigo;
         this._status = status;
-        this._cor = cor;
+        this._bg = bg;
         this._data = data
+        this._color = color
         this._id = id
     }
 
@@ -21,10 +22,14 @@ export class Task {
         return this._status;
     }
 
-    get cor() {
-        return this._cor
+    get bg() {
+        return this._bg
     }
 
+    get color() {
+        return this._color
+    }
+    
     get data() {
         return this._data
     }

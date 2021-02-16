@@ -63,7 +63,54 @@ export class NoteDao {
         })
     }
 
+    excluir(id) {
+        return new Promise((resolve, reject) => {
+
+            const store = this._connection
+                .transaction([this._store], 'readwrite')
+                .objectStore(this._store)
+
+            const request = store.delete(id)
+
+            request.onsuccess = e => {
+                console.log(e);
+                resolve()
+            }
+
+            request.onerror = e => {
+                reject('Houve um erro')
+            }
+        })
+    }
+
+    excluirTodos(taskId) {
+        return new Promise((resolve, reject) => {
+            const store = this._connection
+                .transaction([this._store], 'readwrite')
+                .objectStore(this._store)
+
+            const index = store.index('_taskId')
+
+            const request = index.openCursor(IDBKeyRange.only(taskId))
+
+            request.onsuccess = async e => {
+                const cursor = request.result
+                if (cursor) {
+                    const id = cursor.value._id
+                    await store.delete(id)
+                    cursor.continue()
+                } else {
+                    resolve()
+                }
+            }
+
+            request.onerror = e => {
+                reject('Houve um erro')
+            }
+        })
+    }
+
     _createNote(note) {
-        return new Note(note._texto, note._data, note._taskId)
+        return new Note(note._texto, note._data, note._taskId, note._id)
     }
 }

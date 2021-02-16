@@ -1,7 +1,7 @@
 <template>
 	<v-container>
 		<v-row dense justify="center">
-			<v-col align-self="end" cols="12"  v-if="paleta.length">
+			<v-col align-self="end" cols="12" v-if="paleta.length">
 				<v-btn fab small @click="voltar()">
 					<v-icon>mdi-arrow-left </v-icon>
 				</v-btn>
@@ -18,7 +18,7 @@
 				<v-btn
 					:color="item.name"
 					small
-					@click="seleciona(item.name)"
+					@click="seleciona(item)"
 				></v-btn>
 			</v-col>
 		</v-row>
@@ -29,15 +29,13 @@
 import { mapActions } from "vuex";
 
 export default {
-	
 	name: "SelectColor",
 
-	props: ['value'],
+	props: ["value"],
 
 	data: () => ({ cores: [], paleta: [] }),
 
 	methods: {
-
 		...mapActions("task", ["ActionListColors", "ActionListPalette"]),
 
 		filtrar(name) {
@@ -47,8 +45,8 @@ export default {
 			});
 		},
 
-		seleciona(name) {
-			this.$emit('input', name)
+		seleciona(cor) {
+			this.$emit("input", { bg: cor.name, color: cor.color });
 		},
 
 		voltar() {

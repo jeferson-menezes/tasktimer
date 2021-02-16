@@ -1,24 +1,16 @@
 <template>
 	<v-app>
 		<MessageSnack />
-		
+
 		<TaskForm />
 
 		<NoteForm />
-		
+
+		<vue-confirm-dialog></vue-confirm-dialog>
 
 		<v-navigation-drawer app v-model="drawer"> </v-navigation-drawer>
 
 		<v-app-bar app dense elevation="0">
-			<!-- <v-btn small icon>
-				<v-icon color="green"> mdi-record</v-icon>
-			</v-btn>
-			<v-btn small icon>
-				<v-icon color="yellow"> mdi-record</v-icon>
-			</v-btn>
-			<v-btn small icon @click="close">
-				<v-icon color="red"> mdi-record</v-icon>
-			</v-btn> -->
 			<v-spacer></v-spacer>
 
 			<v-btn icon @click="$vuetify.theme.dark = !$vuetify.theme.dark">

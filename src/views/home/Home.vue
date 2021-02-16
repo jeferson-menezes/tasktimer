@@ -12,7 +12,7 @@
 			v-for="(item, i) in recentTasks"
 			:key="i"
 			class="mt-3"
-			:color="item.cor"
+			:color="item.bg"
 		>
 			<v-card-actions>
 				<v-list-item class="pl-1">
@@ -88,11 +88,10 @@ export default {
 			"ActionFilterRecenteTasks",
 			"ActionGetActive",
 			"ActionUpdateActives",
-			
 		]),
 
 		...mapActions("history", ["ActionSaveTime"]),
-		
+
 		start() {
 			this.running = true;
 			new Notification("Tasktimer", {
@@ -133,13 +132,26 @@ export default {
 			});
 		},
 
+		podeSair() {
+			if (
+				this.running ||
+				this.timer.hora !== "00" ||
+				this.timer.minuto !== "00" ||
+				this.timer.segundo !== "00"
+			) {
+				return false;
+			} else {
+				return true;
+			}
+		},
+
 		async ativar(id) {
 			await this.ActionUpdateActives(id);
 			this.ActionFilterRecenteTasks();
 		},
 	},
 
-	created() {
+	mounted() {
 		this.ActionGetActive().catch((err) =>
 			this.$root.$emit("message::show", {
 				timeout: 2000,
@@ -150,13 +162,29 @@ export default {
 	},
 
 	beforeRouteEnter(to, from, next) {
-		// alert("Voltando para a rota");
-		next();
+		next(true);
 	},
 
 	beforeRouteLeave(to, from, next) {
-		// const sair = window.confirm("Deseja sair da rota")
-		next(true);
+		if (!this.podeSair()) {
+			this.$confirm({
+				title: "Confirme!",
+				message:
+					"É preciso parar para salvar o tempo, antes de sair da página.",
+				button: {
+					yes: "OK",
+				},
+				callback: (payload) => {
+					next(false);
+				},
+			});
+		} else {
+			next(true);
+		}
+	},
+	beforeRouteUpdate(to, from, next) {
+		// just use `this`
+		alert('oi')
 	},
 };
 </script>

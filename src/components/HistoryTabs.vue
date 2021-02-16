@@ -20,51 +20,22 @@
 
 		<v-tabs-items v-model="tab">
 			<v-tab-item value="times">
-				<v-list two-line>
-					<template v-for="item in times">
-						<v-list-item :key="item.id">
-							<v-list-item-content>
-								<v-list-item-title>
-									<span
-										class="font-weight-medium text-uppercase"
-									>
-										tempo - </span
-									>{{ item.tempo }}</v-list-item-title
-								>
-								<v-list-item-subtitle>
-									<span class="font-weight-medium">
-										iniciado em -
-									</span>
-									<small class="font-weight-regular">
-										{{ item.inicio | datetime }} </small
-									><br />
-									<span class="font-weight-medium">
-										finalizado em -
-									</span>
-									<small class="font-weight-regular">{{
-										item.fim | datetime
-									}}</small>
-								</v-list-item-subtitle>
-							</v-list-item-content>
-							<v-list-item-action>
-								<v-btn icon>
-									<v-icon color="grey lighten-1"
-										>mdi-delete</v-icon
-									>
-								</v-btn>
-							</v-list-item-action>
-						</v-list-item>
-					</template>
-				</v-list>
+				<TimeCard
+					v-for="time in times"
+					:key="time.id"
+					:time="time"
+					:color="color"
+					@time-excluido="timeExcluido"
+				></TimeCard>
 			</v-tab-item>
 
 			<v-tab-item value="notes">
-
-				<NoteCard 
+				<NoteCard
 					v-for="note in notes"
 					:key="note.id"
 					:note="note"
 					:color="color"
+					@note-excluida="noteExcluido"
 				></NoteCard>
 			</v-tab-item>
 		</v-tabs-items>
@@ -74,12 +45,14 @@
 <script>
 import { mapActions } from "vuex";
 import NoteCard from "./NoteCard";
+import TimeCard from "./TimeCard";
 
 export default {
 	name: "HistoryTabs",
 
 	components: {
 		NoteCard,
+		TimeCard,
 	},
 
 	props: {
@@ -96,7 +69,6 @@ export default {
 	}),
 
 	methods: {
-		
 		...mapActions("history", ["ActionListTimes", "ActionListNotes"]),
 
 		listNotes() {
@@ -111,6 +83,14 @@ export default {
 			this.ActionListTimes(this.id)
 				.then((res) => (this.times = res))
 				.finally(() => (this.timeLoading = false));
+		},
+
+		timeExcluido(id) {
+			this.times = this.times.filter((t) => t.id !== id);
+		},
+
+		noteExcluido(id) {
+			this.notes = this.notes.filter((n) => n.id !== id);
 		},
 	},
 

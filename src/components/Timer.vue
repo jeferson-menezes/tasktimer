@@ -15,7 +15,7 @@
 								hora
 							</small>
 						</v-col>
-						
+
 						<v-col cols="auto" class="text-center">
 							<span
 								class="display-2 text-center font-weight-light"
@@ -27,7 +27,7 @@
 								minuto
 							</small>
 						</v-col>
-						
+
 						<v-col cols="auto" class="text-center">
 							<span
 								class="display-2 text-center font-weight-light"
@@ -192,7 +192,11 @@ export default {
 
 	computed: {
 		show() {
-			return this.task.hasOwnProperty("_nome");
+			if (this.task && this.task.hasOwnProperty("_nome")) {
+				return true;
+			} else {
+				return false;
+			}
 		},
 	},
 };

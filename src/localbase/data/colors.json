@@ -7,85 +7,99 @@
         "id": 1,
         "name": "red",
         "hexa": "#F44336",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": "white--text"
       },
       {
         "id": 2,
         "name": "red lighten-5",
         "hexa": "#FFEBEE",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 3,
         "name": "red lighten-4",
         "hexa": "#FFCDD2",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 4,
         "name": "red lighten-3",
         "hexa": "#EF9A9A",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 5,
         "name": "red lighten-2",
         "hexa": "#E57373",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 6,
         "name": "red lighten-1",
         "hexa": "#EF5350",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 7,
         "name": "red darken-1",
         "hexa": "#E53935",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": "white--text"
       },
       {
         "id": 8,
         "name": "red darken-2",
         "hexa": "#D32F2F",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": "white--text"
       },
       {
         "id": 9,
         "name": "red darken-3",
         "hexa": "#C62828",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": "white--text"
       },
       {
         "id": 10,
         "name": "red darken-4",
         "hexa": "#B71C1C",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": "white--text"
       },
       {
         "id": 11,
         "name": "red accent-1",
         "hexa": "#FF8A80",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 12,
         "name": "red accent-2",
         "hexa": "#FF5252",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 13,
         "name": "red accent-3",
         "hexa": "#FF1744",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       },
       {
         "id": 14,
         "name": "red accent-4",
         "hexa": "#D50000",
-        "paletteName": "red"
+        "paletteName": "red",
+        "color": ""
       }
     ]
   },
@@ -97,85 +111,99 @@
         "id": 15,
         "name": "pink",
         "hexa": "#E91E63",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": "white--text"
       },
       {
         "id": 16,
         "name": "pink lighten-5",
         "hexa": "#FCE4EC",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 17,
         "name": "pink lighten-4",
         "hexa": "#F8BBD0",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 18,
         "name": "pink lighten-3",
         "hexa": "#F48FB1",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 19,
         "name": "pink lighten-2",
         "hexa": "#F06292",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 20,
         "name": "pink lighten-1",
         "hexa": "#EC407A",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 21,
         "name": "pink darken-1",
         "hexa": "#D81B60",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": "white--text"
       },
       {
         "id": 22,
         "name": "pink darken-2",
         "hexa": "#C2185B",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": "white--text"
       },
       {
         "id": 23,
         "name": "pink darken-3",
         "hexa": "#AD1457",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": "white--text"
       },
       {
         "id": 24,
         "name": "pink darken-4",
         "hexa": "#880E4F",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": "white--text"
       },
       {
         "id": 25,
         "name": "pink accent-1",
         "hexa": "#FF80AB",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 26,
         "name": "pink accent-2",
         "hexa": "#FF4081",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 27,
         "name": "pink accent-3",
         "hexa": "#F50057",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       },
       {
         "id": 28,
         "name": "pink accent-4",
         "hexa": "#C51162",
-        "paletteName": "pink"
+        "paletteName": "pink",
+        "color": ""
       }
     ]
   },
@@ -187,85 +215,99 @@
         "id": 29,
         "name": "purple",
         "hexa": "#9C27B0",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": "white--text"
       },
       {
         "id": 30,
         "name": "purple lighten-5",
         "hexa": "#F3E5F5",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 31,
         "name": "purple lighten-4",
         "hexa": "#E1BEE7",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 32,
         "name": "purple lighten-3",
         "hexa": "#CE93D8",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 33,
         "name": "purple lighten-2",
         "hexa": "#BA68C8",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 34,
         "name": "purple lighten-1",
         "hexa": "#AB47BC",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 35,
         "name": "purple darken-1",
         "hexa": "#8E24AA",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": "white--text"
       },
       {
         "id": 36,
         "name": "purple darken-2",
         "hexa": "#7B1FA2",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": "white--text"
       },
       {
         "id": 37,
         "name": "purple darken-3",
         "hexa": "#6A1B9A",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": "white--text"
       },
       {
         "id": 38,
         "name": "purple darken-4",
         "hexa": "#4A148C",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": "white--text"
       },
       {
         "id": 39,
         "name": "purple accent-1",
         "hexa": "#EA80FC",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 40,
         "name": "purple accent-2",
         "hexa": "#E040FB",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 41,
         "name": "purple accent-3",
         "hexa": "#D500F9",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       },
       {
         "id": 42,
         "name": "purple accent-4",
         "hexa": "#AA00FF",
-        "paletteName": "purple"
+        "paletteName": "purple",
+        "color": ""
       }
     ]
   },
@@ -277,85 +319,99 @@
         "id": 43,
         "name": "deep-purple",
         "hexa": "#673AB7",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": "white--text"
       },
       {
         "id": 44,
         "name": "deep-purple lighten-5",
         "hexa": "#EDE7F6",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 45,
         "name": "deep-purple lighten-4",
         "hexa": "#D1C4E9",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 46,
         "name": "deep-purple lighten-3",
         "hexa": "#B39DDB",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 47,
         "name": "deep-purple lighten-2",
         "hexa": "#9575CD",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 48,
         "name": "deep-purple lighten-1",
         "hexa": "#7E57C2",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 49,
         "name": "deep-purple darken-1",
         "hexa": "#5E35B1",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": "white--text"
       },
       {
         "id": 50,
         "name": "deep-purple darken-2",
         "hexa": "#512DA8",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": "white--text"
       },
       {
         "id": 51,
         "name": "deep-purple darken-3",
         "hexa": "#4527A0",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": "white--text"
       },
       {
         "id": 52,
         "name": "deep-purple darken-4",
         "hexa": "#311B92",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": "white--text"
       },
       {
         "id": 53,
         "name": "deep-purple accent-1",
         "hexa": "#B388FF",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 54,
         "name": "deep-purple accent-2",
         "hexa": "#7C4DFF",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 55,
         "name": "deep-purple accent-3",
         "hexa": "#651FFF",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       },
       {
         "id": 56,
         "name": "deep-purple accent-4",
         "hexa": "#6200EA",
-        "paletteName": "deep-purple"
+        "paletteName": "deep-purple",
+        "color": ""
       }
     ]
   },
@@ -367,85 +423,99 @@
         "id": 57,
         "name": "indigo",
         "hexa": "#3F51B5",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": "white--text"
       },
       {
         "id": 58,
         "name": "indigo lighten-5",
         "hexa": "#E8EAF6",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 59,
         "name": "indigo lighten-4",
         "hexa": "#C5CAE9",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 60,
         "name": "indigo lighten-3",
         "hexa": "#9FA8DA",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 61,
         "name": "indigo lighten-2",
         "hexa": "#7986CB",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 62,
         "name": "indigo lighten-1",
         "hexa": "#5C6BC0",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 63,
         "name": "indigo darken-1",
         "hexa": "#3949AB",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": "white--text"
       },
       {
         "id": 64,
         "name": "indigo darken-2",
         "hexa": "#303F9F",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": "white--text"
       },
       {
         "id": 65,
         "name": "indigo darken-3",
         "hexa": "#283593",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": "white--text"
       },
       {
         "id": 66,
         "name": "indigo darken-4",
         "hexa": "#1A237E",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": "white--text"
       },
       {
         "id": 67,
         "name": "indigo accent-1",
         "hexa": "#8C9EFF",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 68,
         "name": "indigo accent-2",
         "hexa": "#536DFE",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 69,
         "name": "indigo accent-3",
         "hexa": "#3D5AFE",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       },
       {
         "id": 70,
         "name": "indigo accent-4",
         "hexa": "#304FFE",
-        "paletteName": "indigo"
+        "paletteName": "indigo",
+        "color": ""
       }
     ]
   },
@@ -457,85 +527,99 @@
         "id": 71,
         "name": "blue",
         "hexa": "#2196F3",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": "white--text"
       },
       {
         "id": 72,
         "name": "blue lighten-5",
         "hexa": "#E3F2FD",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 73,
         "name": "blue lighten-4",
         "hexa": "#BBDEFB",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 74,
         "name": "blue lighten-3",
         "hexa": "#90CAF9",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 75,
         "name": "blue lighten-2",
         "hexa": "#64B5F6",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 76,
         "name": "blue lighten-1",
         "hexa": "#42A5F5",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 77,
         "name": "blue darken-1",
         "hexa": "#1E88E5",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": "white--text"
       },
       {
         "id": 78,
         "name": "blue darken-2",
         "hexa": "#1976D2",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": "white--text"
       },
       {
         "id": 79,
         "name": "blue darken-3",
         "hexa": "#1565C0",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": "white--text"
       },
       {
         "id": 80,
         "name": "blue darken-4",
         "hexa": "#0D47A1",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": "white--text"
       },
       {
         "id": 81,
         "name": "blue accent-1",
         "hexa": "#82B1FF",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 82,
         "name": "blue accent-2",
         "hexa": "#448AFF",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 83,
         "name": "blue accent-3",
         "hexa": "#2979FF",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       },
       {
         "id": 84,
         "name": "blue accent-4",
         "hexa": "#2962FF",
-        "paletteName": "blue"
+        "paletteName": "blue",
+        "color": ""
       }
     ]
   },
@@ -547,85 +631,99 @@
         "id": 85,
         "name": "light-blue",
         "hexa": "#03A9F4",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": "white--text"
       },
       {
         "id": 86,
         "name": "light-blue lighten-5",
         "hexa": "#E1F5FE",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 87,
         "name": "light-blue lighten-4",
         "hexa": "#B3E5FC",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 88,
         "name": "light-blue lighten-3",
         "hexa": "#81D4FA",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 89,
         "name": "light-blue lighten-2",
         "hexa": "#4FC3F7",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 90,
         "name": "light-blue lighten-1",
         "hexa": "#29B6F6",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 91,
         "name": "light-blue darken-1",
         "hexa": "#039BE5",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": "white--text"
       },
       {
         "id": 92,
         "name": "light-blue darken-2",
         "hexa": "#0288D1",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": "white--text"
       },
       {
         "id": 93,
         "name": "light-blue darken-3",
         "hexa": "#0277BD",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": "white--text"
       },
       {
         "id": 94,
         "name": "light-blue darken-4",
         "hexa": "#01579B",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": "white--text"
       },
       {
         "id": 95,
         "name": "light-blue accent-1",
         "hexa": "#80D8FF",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 96,
         "name": "light-blue accent-2",
         "hexa": "#40C4FF",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 97,
         "name": "light-blue accent-3",
         "hexa": "#00B0FF",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       },
       {
         "id": 98,
         "name": "light-blue accent-4",
         "hexa": "#0091EA",
-        "paletteName": "light-blue"
+        "paletteName": "light-blue",
+        "color": ""
       }
     ]
   },
@@ -637,85 +735,99 @@
         "id": 99,
         "name": "cyan",
         "hexa": "#00BCD4",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": "white--text"
       },
       {
         "id": 100,
         "name": "cyan lighten-5",
         "hexa": "#E0F7FA",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 101,
         "name": "cyan lighten-4",
         "hexa": "#B2EBF2",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 102,
         "name": "cyan lighten-3",
         "hexa": "#80DEEA",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 103,
         "name": "cyan lighten-2",
         "hexa": "#4DD0E1",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 104,
         "name": "cyan lighten-1",
         "hexa": "#26C6DA",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 105,
         "name": "cyan darken-1",
         "hexa": "#00ACC1",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": "white--text"
       },
       {
         "id": 106,
         "name": "cyan darken-2",
         "hexa": "#0097A7",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": "white--text"
       },
       {
         "id": 107,
         "name": "cyan darken-3",
         "hexa": "#00838F",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": "white--text"
       },
       {
         "id": 108,
         "name": "cyan darken-4",
         "hexa": "#006064",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": "white--text"
       },
       {
         "id": 109,
         "name": "cyan accent-1",
         "hexa": "#84FFFF",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 110,
         "name": "cyan accent-2",
         "hexa": "#18FFFF",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 111,
         "name": "cyan accent-3",
         "hexa": "#00E5FF",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       },
       {
         "id": 112,
         "name": "cyan accent-4",
         "hexa": "#00B8D4",
-        "paletteName": "cyan"
+        "paletteName": "cyan",
+        "color": ""
       }
     ]
   },
@@ -727,85 +839,99 @@
         "id": 113,
         "name": "teal",
         "hexa": "#009688",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": "white--text"
       },
       {
         "id": 114,
         "name": "teal lighten-5",
         "hexa": "#E0F2F1",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 115,
         "name": "teal lighten-4",
         "hexa": "#B2DFDB",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 116,
         "name": "teal lighten-3",
         "hexa": "#80CBC4",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 117,
         "name": "teal lighten-2",
         "hexa": "#4DB6AC",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 118,
         "name": "teal lighten-1",
         "hexa": "#26A69A",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 119,
         "name": "teal darken-1",
         "hexa": "#00897B",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": "white--text"
       },
       {
         "id": 120,
         "name": "teal darken-2",
         "hexa": "#00796B",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": "white--text"
       },
       {
         "id": 121,
         "name": "teal darken-3",
         "hexa": "#00695C",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": "white--text"
       },
       {
         "id": 122,
         "name": "teal darken-4",
         "hexa": "#004D40",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": "white--text"
       },
       {
         "id": 123,
         "name": "teal accent-1",
         "hexa": "#A7FFEB",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 124,
         "name": "teal accent-2",
         "hexa": "#64FFDA",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 125,
         "name": "teal accent-3",
         "hexa": "#1DE9B6",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       },
       {
         "id": 126,
         "name": "teal accent-4",
         "hexa": "#00BFA5",
-        "paletteName": "teal"
+        "paletteName": "teal",
+        "color": ""
       }
     ]
   },
@@ -817,85 +943,99 @@
         "id": 127,
         "name": "green",
         "hexa": "#4CAF50",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": "white--text"
       },
       {
         "id": 128,
         "name": "green lighten-5",
         "hexa": "#E8F5E9",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 129,
         "name": "green lighten-4",
         "hexa": "#C8E6C9",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 130,
         "name": "green lighten-3",
         "hexa": "#A5D6A7",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 131,
         "name": "green lighten-2",
         "hexa": "#81C784",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 132,
         "name": "green lighten-1",
         "hexa": "#66BB6A",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 133,
         "name": "green darken-1",
         "hexa": "#43A047",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": "white--text"
       },
       {
         "id": 134,
         "name": "green darken-2",
         "hexa": "#388E3C",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": "white--text"
       },
       {
         "id": 135,
         "name": "green darken-3",
         "hexa": "#2E7D32",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": "white--text"
       },
       {
         "id": 136,
         "name": "green darken-4",
         "hexa": "#1B5E20",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": "white--text"
       },
       {
         "id": 137,
         "name": "green accent-1",
         "hexa": "#B9F6CA",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 138,
         "name": "green accent-2",
         "hexa": "#69F0AE",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 139,
         "name": "green accent-3",
         "hexa": "#00E676",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       },
       {
         "id": 140,
         "name": "green accent-4",
         "hexa": "#00C853",
-        "paletteName": "green"
+        "paletteName": "green",
+        "color": ""
       }
     ]
   },
@@ -907,85 +1047,99 @@
         "id": 141,
         "name": "light-green",
         "hexa": "#8BC34A",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": "white--text"
       },
       {
         "id": 142,
         "name": "light-green lighten-5",
         "hexa": "#F1F8E9",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 143,
         "name": "light-green lighten-4",
         "hexa": "#DCEDC8",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 144,
         "name": "light-green lighten-3",
         "hexa": "#C5E1A5",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 145,
         "name": "light-green lighten-2",
         "hexa": "#AED581",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 146,
         "name": "light-green lighten-1",
         "hexa": "#9CCC65",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 147,
         "name": "light-green darken-1",
         "hexa": "#7CB342",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": "white--text"
       },
       {
         "id": 148,
         "name": "light-green darken-2",
         "hexa": "#689F38",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": "white--text"
       },
       {
         "id": 149,
         "name": "light-green darken-3",
         "hexa": "#558B2F",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": "white--text"
       },
       {
         "id": 150,
         "name": "light-green darken-4",
         "hexa": "#33691E",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": "white--text"
       },
       {
         "id": 151,
         "name": "light-green accent-1",
         "hexa": "#CCFF90",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 152,
         "name": "light-green accent-2",
         "hexa": "#B2FF59",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 153,
         "name": "light-green accent-3",
         "hexa": "#76FF03",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       },
       {
         "id": 154,
         "name": "light-green accent-4",
         "hexa": "#64DD17",
-        "paletteName": "light-green"
+        "paletteName": "light-green",
+        "color": ""
       }
     ]
   },
@@ -997,85 +1151,99 @@
         "id": 155,
         "name": "lime",
         "hexa": "#CDDC39",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": "white--text"
       },
       {
         "id": 156,
         "name": "lime lighten-5",
         "hexa": "#F9FBE7",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 157,
         "name": "lime lighten-4",
         "hexa": "#F0F4C3",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 158,
         "name": "lime lighten-3",
         "hexa": "#E6EE9C",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 159,
         "name": "lime lighten-2",
         "hexa": "#DCE775",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 160,
         "name": "lime lighten-1",
         "hexa": "#D4E157",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 161,
         "name": "lime darken-1",
         "hexa": "#C0CA33",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": "white--text"
       },
       {
         "id": 162,
         "name": "lime darken-2",
         "hexa": "#AFB42B",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": "white--text"
       },
       {
         "id": 163,
         "name": "lime darken-3",
         "hexa": "#9E9D24",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": "white--text"
       },
       {
         "id": 164,
         "name": "lime darken-4",
         "hexa": "#827717",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": "white--text"
       },
       {
         "id": 165,
         "name": "lime accent-1",
         "hexa": "#F4FF81",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 166,
         "name": "lime accent-2",
         "hexa": "#EEFF41",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 167,
         "name": "lime accent-3",
         "hexa": "#C6FF00",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       },
       {
         "id": 168,
         "name": "lime accent-4",
         "hexa": "#AEEA00",
-        "paletteName": "lime"
+        "paletteName": "lime",
+        "color": ""
       }
     ]
   },
@@ -1087,85 +1255,99 @@
         "id": 169,
         "name": "yellow",
         "hexa": "#FFEB3B",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": "white--text"
       },
       {
         "id": 170,
         "name": "yellow lighten-5",
         "hexa": "#FFFDE7",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 171,
         "name": "yellow lighten-4",
         "hexa": "#FFF9C4",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 172,
         "name": "yellow lighten-3",
         "hexa": "#FFF59D",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 173,
         "name": "yellow lighten-2",
         "hexa": "#FFF176",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 174,
         "name": "yellow lighten-1",
         "hexa": "#FFEE58",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 175,
         "name": "yellow darken-1",
         "hexa": "#FDD835",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": "white--text"
       },
       {
         "id": 176,
         "name": "yellow darken-2",
         "hexa": "#FBC02D",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": "white--text"
       },
       {
         "id": 177,
         "name": "yellow darken-3",
         "hexa": "#F9A825",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": "white--text"
       },
       {
         "id": 178,
         "name": "yellow darken-4",
         "hexa": "#F57F17",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": "white--text"
       },
       {
         "id": 179,
         "name": "yellow accent-1",
         "hexa": "#FFFF8D",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 180,
         "name": "yellow accent-2",
         "hexa": "#FFFF00",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 181,
         "name": "yellow accent-3",
         "hexa": "#FFEA00",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       },
       {
         "id": 182,
         "name": "yellow accent-4",
         "hexa": "#FFD600",
-        "paletteName": "yellow"
+        "paletteName": "yellow",
+        "color": ""
       }
     ]
   },
@@ -1177,85 +1359,99 @@
         "id": 183,
         "name": "amber",
         "hexa": "#FFC107",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": "white--text"
       },
       {
         "id": 184,
         "name": "amber lighten-5",
         "hexa": "#FFF8E1",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 185,
         "name": "amber lighten-4",
         "hexa": "#FFECB3",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 186,
         "name": "amber lighten-3",
         "hexa": "#FFE082",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 187,
         "name": "amber lighten-2",
         "hexa": "#FFD54F",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 188,
         "name": "amber lighten-1",
         "hexa": "#FFCA28",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 189,
         "name": "amber darken-1",
         "hexa": "#FFB300",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": "white--text"
       },
       {
         "id": 190,
         "name": "amber darken-2",
         "hexa": "#FFA000",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": "white--text"
       },
       {
         "id": 191,
         "name": "amber darken-3",
         "hexa": "#FF8F00",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": "white--text"
       },
       {
         "id": 192,
         "name": "amber darken-4",
         "hexa": "#FF6F00",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": "white--text"
       },
       {
         "id": 193,
         "name": "amber accent-1",
         "hexa": "#FFE57F",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 194,
         "name": "amber accent-2",
         "hexa": "#FFD740",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 195,
         "name": "amber accent-3",
         "hexa": "#FFC400",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       },
       {
         "id": 196,
         "name": "amber accent-4",
         "hexa": "#FFAB00",
-        "paletteName": "amber"
+        "paletteName": "amber",
+        "color": ""
       }
     ]
   },
@@ -1267,85 +1463,99 @@
         "id": 197,
         "name": "orange",
         "hexa": "#FF9800",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": "white--text"
       },
       {
         "id": 198,
         "name": "orange lighten-5",
         "hexa": "#FFF3E0",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 199,
         "name": "orange lighten-4",
         "hexa": "#FFE0B2",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 200,
         "name": "orange lighten-3",
         "hexa": "#FFCC80",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 201,
         "name": "orange lighten-2",
         "hexa": "#FFB74D",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 202,
         "name": "orange lighten-1",
         "hexa": "#FFA726",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 203,
         "name": "orange darken-1",
         "hexa": "#FB8C00",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": "white--text"
       },
       {
         "id": 204,
         "name": "orange darken-2",
         "hexa": "#F57C00",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": "white--text"
       },
       {
         "id": 205,
         "name": "orange darken-3",
         "hexa": "#EF6C00",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": "white--text"
       },
       {
         "id": 206,
         "name": "orange darken-4",
         "hexa": "#E65100",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": "white--text"
       },
       {
         "id": 207,
         "name": "orange accent-1",
         "hexa": "#FFD180",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 208,
         "name": "orange accent-2",
         "hexa": "#FFAB40",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 209,
         "name": "orange accent-3",
         "hexa": "#FF9100",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       },
       {
         "id": 210,
         "name": "orange accent-4",
         "hexa": "#FF6D00",
-        "paletteName": "orange"
+        "paletteName": "orange",
+        "color": ""
       }
     ]
   },
@@ -1357,85 +1567,99 @@
         "id": 211,
         "name": "deep-orange",
         "hexa": "#FF5722",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": "white--text"
       },
       {
         "id": 212,
         "name": "deep-orange lighten-5",
         "hexa": "#FBE9E7",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 213,
         "name": "deep-orange lighten-4",
         "hexa": "#FFCCBC",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 214,
         "name": "deep-orange lighten-3",
         "hexa": "#FFAB91",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 215,
         "name": "deep-orange lighten-2",
         "hexa": "#FF8A65",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 216,
         "name": "deep-orange lighten-1",
         "hexa": "#FF7043",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 217,
         "name": "deep-orange darken-1",
         "hexa": "#F4511E",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": "white--text"
       },
       {
         "id": 218,
         "name": "deep-orange darken-2",
         "hexa": "#E64A19",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": "white--text"
       },
       {
         "id": 219,
         "name": "deep-orange darken-3",
         "hexa": "#D84315",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": "white--text"
       },
       {
         "id": 220,
         "name": "deep-orange darken-4",
         "hexa": "#BF360C",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": "white--text"
       },
       {
         "id": 221,
         "name": "deep-orange accent-1",
         "hexa": "#FF9E80",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 222,
         "name": "deep-orange accent-2",
         "hexa": "#FF6E40",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 223,
         "name": "deep-orange accent-3",
         "hexa": "#FF3D00",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       },
       {
         "id": 224,
         "name": "deep-orange accent-4",
         "hexa": "#DD2C00",
-        "paletteName": "deep-orange"
+        "paletteName": "deep-orange",
+        "color": ""
       }
     ]
   },
@@ -1447,61 +1671,71 @@
         "id": 225,
         "name": "brown",
         "hexa": "#795548",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": "white--text"
       },
       {
         "id": 226,
         "name": "brown lighten-5",
         "hexa": "#EFEBE9",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": ""
       },
       {
         "id": 227,
         "name": "brown lighten-4",
         "hexa": "#D7CCC8",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": ""
       },
       {
         "id": 228,
         "name": "brown lighten-3",
         "hexa": "#BCAAA4",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": ""
       },
       {
         "id": 229,
         "name": "brown lighten-2",
         "hexa": "#A1887F",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": ""
       },
       {
         "id": 230,
         "name": "brown lighten-1",
         "hexa": "#8D6E63",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": ""
       },
       {
         "id": 231,
         "name": "brown darken-1",
         "hexa": "#6D4C41",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": "white--text"
       },
       {
         "id": 232,
         "name": "brown darken-2",
         "hexa": "#5D4037",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": "white--text"
       },
       {
         "id": 233,
         "name": "brown darken-3",
         "hexa": "#4E342E",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": "white--text"
       },
       {
         "id": 234,
         "name": "brown darken-4",
         "hexa": "#3E2723",
-        "paletteName": "brown"
+        "paletteName": "brown",
+        "color": "white--text"
       }
     ]
   },
@@ -1513,61 +1747,71 @@
         "id": 235,
         "name": "blue-grey",
         "hexa": "#607D8B",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": ""
       },
       {
         "id": 236,
         "name": "blue-grey lighten-5",
         "hexa": "#ECEFF1",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": ""
       },
       {
         "id": 237,
         "name": "blue-grey lighten-4",
         "hexa": "#CFD8DC",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": ""
       },
       {
         "id": 238,
         "name": "blue-grey lighten-3",
         "hexa": "#B0BEC5",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": ""
       },
       {
         "id": 239,
         "name": "blue-grey lighten-2",
         "hexa": "#90A4AE",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": ""
       },
       {
         "id": 240,
         "name": "blue-grey lighten-1",
         "hexa": "#78909C",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": ""
       },
       {
         "id": 241,
         "name": "blue-grey darken-1",
         "hexa": "#546E7A",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": "white--text"
       },
       {
         "id": 242,
         "name": "blue-grey darken-2",
         "hexa": "#455A64",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": "white--text"
       },
       {
         "id": 243,
         "name": "blue-grey darken-3",
         "hexa": "#37474F",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": "white--text"
       },
       {
         "id": 244,
         "name": "blue-grey darken-4",
         "hexa": "#263238",
-        "paletteName": "blue-grey"
+        "paletteName": "blue-grey",
+        "color": "white--text"
       }
     ]
   },
@@ -1579,61 +1823,71 @@
         "id": 245,
         "name": "grey",
         "hexa": "#9E9E9E",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": "white--text"
       },
       {
         "id": 246,
         "name": "grey lighten-5",
         "hexa": "#FAFAFA",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": ""
       },
       {
         "id": 247,
         "name": "grey lighten-4",
         "hexa": "#F5F5F5",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": "t"
       },
       {
         "id": 248,
         "name": "grey lighten-3",
         "hexa": "#EEEEEE",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": ""
       },
       {
         "id": 249,
         "name": "grey lighten-2",
         "hexa": "#E0E0E0",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": ""
       },
       {
         "id": 250,
         "name": "grey lighten-1",
         "hexa": "#BDBDBD",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": ""
       },
       {
         "id": 251,
         "name": "grey darken-1",
         "hexa": "#757575",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": "white--text"
       },
       {
         "id": 252,
         "name": "grey darken-2",
         "hexa": "#616161",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": "white--text"
       },
       {
         "id": 253,
         "name": "grey darken-3",
         "hexa": "#424242",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": "white--text"
       },
       {
         "id": 254,
         "name": "grey darken-4",
         "hexa": "#212121",
-        "paletteName": "grey"
+        "paletteName": "grey",
+        "color": "white--text"
       }
     ]
   }

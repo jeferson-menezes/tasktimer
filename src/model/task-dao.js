@@ -1,6 +1,7 @@
+import models from './models';
 import { Status, Task } from './task';
-import models from './models'
-import { promises } from 'fs';
+import { NoteDao } from './note-dao'
+import { TimeDao } from "./time-dao";
 
 export class TaskDao {
 
@@ -59,7 +60,7 @@ export class TaskDao {
 
             request.onsuccess = e => {
                 const d = e.target.result
-                if (!d) reject('Tarefa não encontrada!')
+                if (!d) resolve(null)
                 else
                     resolve(this._createTask(d))
             }
@@ -115,8 +116,10 @@ export class TaskDao {
                 const d = e.target.result
                 if (d) {
                     d._status = Status.ATIVA
-                    store.put(d, id)
-                    resolve(this._createTask(d))
+                    console.log(d);
+                    resolve()
+                    // store.put(d, id)
+                    // resolve(this._createTask(d))
                 } else {
                     reject('Tarefa não encontrada!')
                 }
@@ -180,6 +183,31 @@ export class TaskDao {
         })
     }
 
+    excluir(id) {
+
+        return new Promise(async (resolve, reject) => {
+
+            await new NoteDao(this._connection).excluirTodos(id)
+
+            await new TimeDao(this._connection).excluirTodos(id)
+
+
+            const store = this._connection
+                .transaction([this._store], 'readwrite')
+                .objectStore(this._store)
+
+            const request = store.delete(id)
+
+            request.onsuccess = e => {
+                resolve()
+            }
+
+            request.onerror = e => {
+                reject()
+            }
+        })
+    }
+
     _alteraAtivo() {
         return new Promise((resolve, reject) => {
 
@@ -187,23 +215,22 @@ export class TaskDao {
                 .transaction([this._store], 'readwrite')
                 .objectStore(this._store)
 
-            const request = store
-                .index('_status')
-                .openCursor()
+            const index = store.index('_status')
+
+            const request = index.openCursor(IDBKeyRange.only(Status.ATIVA))
 
             request.onsuccess = e => {
-                const cursor = e.target.result
+                const cursor = request.result
                 if (cursor) {
-                    if (cursor.value._status === Status.ATIVA) {
-                        const dado = cursor.value
-                        dado._status = Status.RECENTE
-                        store.put(dado, cursor.primaryKey)
-                    }
+                    const dado = cursor.value
+                    dado._status = Status.RECENTE
+                    store.put(dado, cursor.primaryKey)
                     cursor.continue()
                 } else {
                     resolve()
                 }
             }
+
             request.onerror = e => {
                 reject("Houve um erro!")
             }
@@ -211,7 +238,8 @@ export class TaskDao {
     }
 
     _createTask(d) {
-        return new Task(d._nome, d._codigo, d._status, d._cor, d._data, d._id)
+        return new Task(
+            d._nome, d._codigo, d._status, d._bg, d._data, d._color, d._id)
     }
 
 }

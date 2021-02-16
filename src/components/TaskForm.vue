@@ -9,21 +9,24 @@
 						label="Código"
 						required
 					></v-text-field>
+
 					<v-text-field
 						v-model="form.nome"
 						:rules="rules.nome"
 						label="Nome"
 						required
 					></v-text-field>
+
 					<v-text-field
 						disabled
-						v-model="form.cor"
-						:rules="rules.cor"
+						v-model="form.cor.bg"
+						:rules="rules.bg"
 						label="Cor"
 						required
 						placeholder="79938"
 					></v-text-field>
-				<SelectColor v-model="form.cor" />
+
+					<SelectColor v-model="form.cor" />
 				</v-card-text>
 				<v-card-actions>
 					<v-spacer></v-spacer>
@@ -51,12 +54,15 @@ export default {
 		form: {
 			nome: "",
 			codigo: "",
-			cor: "",
+			cor: {
+				bg: "",
+				color: "",
+			},
 		},
 		rules: {
 			nome: [required("Como assim não deu um nome!")],
 			codigo: [required("Como vai diferenciar sem código?!")],
-			cor: [required("Põe uma corzinha ai né!")],
+			bg: [required("Põe uma corzinha ai né!")],
 		},
 	}),
 
@@ -68,14 +74,19 @@ export default {
 			if (!this.validForm()) return;
 
 			try {
-				const { nome, codigo, cor } = this.form;
+				const {
+					nome,
+					codigo,
+					cor: { bg, color },
+				} = this.form;
 
 				const task = new Task(
 					nome,
 					codigo,
-					Status.CONCLUIDO,
-					cor,
-					new Date().toISOString()
+					Status.RECENTE,
+					bg,
+					new Date().toISOString(),
+					color
 				);
 
 				await this.ActionSaveTask(task);
@@ -87,7 +98,7 @@ export default {
 					text: "Tarefa adicionada",
 				});
 
-				this.ActionFilterRecenteTasks()
+				this.ActionFilterRecenteTasks();
 			} catch (error) {
 				console.error(error);
 			}
@@ -109,6 +120,5 @@ export default {
 			this.sheet = true;
 		});
 	},
-
 };
 </script>

@@ -17,6 +17,7 @@
     "date-fns": "^2.16.1",
     "moment": "^2.29.1",
     "vue": "^2.6.11",
+    "vue-confirm-dialog": "^1.0.2",
     "vue-moment": "^4.1.0",
     "vue-router": "^3.2.0",
     "vuedraggable": "^2.24.3",
