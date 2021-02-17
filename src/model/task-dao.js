@@ -102,6 +102,7 @@ export class TaskDao {
     }
 
     alterarAtivos(id) {
+
         return new Promise(async (resolve, reject) => {
 
             await this._alteraAtivo()
@@ -116,10 +117,9 @@ export class TaskDao {
                 const d = e.target.result
                 if (d) {
                     d._status = Status.ATIVA
-                    console.log(d);
-                    resolve()
-                    // store.put(d, id)
-                    // resolve(this._createTask(d))
+                    
+                    store.put(d, id)
+                    resolve(this._createTask(d))
                 } else {
                     reject('Tarefa não encontrada!')
                 }

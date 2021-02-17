@@ -1,5 +1,4 @@
 // task
 export default {
-  tasks: [],
-  task:{}
+  dark: false
 }

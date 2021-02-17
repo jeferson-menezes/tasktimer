@@ -13,7 +13,7 @@
 		<v-app-bar app dense elevation="0">
 			<v-spacer></v-spacer>
 
-			<v-btn icon @click="$vuetify.theme.dark = !$vuetify.theme.dark">
+			<v-btn icon @click="updateThemeDark(!themeDark)">
 				<v-icon v-if="$vuetify.theme.dark">mdi-palette-outline</v-icon>
 				<v-icon v-else>mdi-palette</v-icon>
 			</v-btn>
@@ -25,7 +25,7 @@
 			</v-container>
 		</v-main>
 
-		<v-footer app absolute elevation="0">
+		<v-footer app absolute class="pa-1" elevation="0">
 			<v-btn
 				color="pink"
 				fab
@@ -57,6 +57,8 @@ import TaskForm from "./components/TaskForm";
 import NoteForm from "./components/NoteForm";
 import MessageSnack from "./components/MessageSnack";
 import { closeWindow, maximizeWindow, minimizeWindow } from "./renderer";
+import { mapActions, mapState } from "vuex";
+import { Config, KeyConfig } from "./model/config";
 
 export default {
 	name: "App",
@@ -68,12 +70,15 @@ export default {
 	}),
 
 	computed: {
+		...mapState("config", ["themeDark"]),
 		routerLinks() {
 			return this.$router.options.routes;
 		},
 	},
 
 	methods: {
+		...mapActions("config", ["ActionGetThemeDark", "ActionSetThemeDark"]),
+
 		openFormTask() {
 			this.$root.$emit("task-form-open");
 		},
@@ -87,6 +92,25 @@ export default {
 		minimize() {
 			minimizeWindow();
 		},
+
+		updateThemeDark(value) {
+			const config = new Config(KeyConfig.THEME_DARK, value);
+			this.ActionSetThemeDark(config);
+		},
+	},
+
+	watch: {
+		themeDark(o, n) {
+			this.$vuetify.theme.dark = this.themeDark;
+		},
+	},
+
+	mounted() {
+		this.$vuetify.theme.dark = this.themeDark;
+	},
+
+	created() {
+		this.ActionGetThemeDark();
 	},
 };
 </script>

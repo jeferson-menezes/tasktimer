@@ -1,5 +1,6 @@
 export default {
     task: 'task',
     time: 'time',
-    note: 'note'
+    note: 'note',
+    config:'config'
 }

@@ -1,59 +1,28 @@
 <template>
-	<v-container grid-list-xs>
-		<Timer
-			:task="activeTask"
-			v-model="timer"
-			@timer:start="start"
-			@timer:pause="pause"
-			@timer:stop="stop"
-		/>
+	<v-container>
 
-		<v-card
-			v-for="(item, i) in recentTasks"
-			:key="i"
-			class="mt-3"
-			:color="item.bg"
-		>
-			<v-card-actions>
-				<v-list-item class="pl-1">
-					<v-list-item-avatar class="mr-2">
-						<v-btn
-							:disabled="running"
-							fab
-							dark
-							small
-							@click="ativar(item.id)"
-						>
-							<v-icon dark> mdi-play </v-icon>
-						</v-btn>
-					</v-list-item-avatar>
-					<v-list-item-title class="font-weight-light">
-						{{ item.nome }}
-					</v-list-item-title>
-					<v-row justify="end" align="center">
-						<v-badge
-							overlap
-							right
-							color="amber darken-4"
-							class="mb-1"
-						>
-							<v-icon>mdi-clock</v-icon>
-							<span slot="badge">9</span>
-						</v-badge>
+		<v-row align="center" justify="center">
+			<Timer
+				:task="activeTask"
+				v-model="timer"
+				@timer:start="start"
+				@timer:pause="pause"
+				@timer:stop="stop"
+			/>
+		</v-row>
 
-						<v-badge
-							overlap
-							right
-							color="amber darken-4"
-							class="mt-1"
-						>
-							<v-icon>mdi-comment</v-icon>
-							<span slot="badge">9</span>
-						</v-badge>
-					</v-row>
-				</v-list-item>
-			</v-card-actions>
-		</v-card>
+		<v-row align="center" justify="center">
+			<v-col cols="12">
+				<RecentCard
+					v-for="item in recentTasks"
+					:task="item"
+					:key="item.id"
+					@ativar="ativar"
+					:running="running"
+				></RecentCard>
+			</v-col>
+		</v-row>
+
 	</v-container>
 </template>
 
@@ -64,11 +33,13 @@ import Timer from "../../components/Timer";
 import playIcon from "../../assets/play.png";
 import stopIcon from "../../assets/stop.png";
 import pauseIcom from "../../assets/pause.png";
+import RecentCard from "../../components/RecentCard";
 
 export default {
+
 	name: "Home",
 
-	components: { Timer },
+	components: { Timer, RecentCard },
 
 	data: () => ({
 		timer: {
@@ -88,6 +59,7 @@ export default {
 			"ActionFilterRecenteTasks",
 			"ActionGetActive",
 			"ActionUpdateActives",
+			"ActionActiveSomaTimes"
 		]),
 
 		...mapActions("history", ["ActionSaveTime"]),
@@ -117,6 +89,8 @@ export default {
 				);
 
 				await this.ActionSaveTime(time);
+
+				await this.ActionActiveSomaTimes(this.activeTask.id)
 
 				this.$root.$emit("message::show", {
 					timeout: 2000,
@@ -161,10 +135,6 @@ export default {
 		this.ActionFilterRecenteTasks();
 	},
 
-	beforeRouteEnter(to, from, next) {
-		next(true);
-	},
-
 	beforeRouteLeave(to, from, next) {
 		if (!this.podeSair()) {
 			this.$confirm({
@@ -174,17 +144,13 @@ export default {
 				button: {
 					yes: "OK",
 				},
-				callback: (payload) => {
+				callback: () => {
 					next(false);
 				},
 			});
 		} else {
 			next(true);
 		}
-	},
-	beforeRouteUpdate(to, from, next) {
-		// just use `this`
-		alert('oi')
 	},
 };
 </script>

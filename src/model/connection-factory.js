@@ -1,7 +1,11 @@
+import models from './models'
+
 const stores = [
-    { name: 'task', indexs: ['_status', '_nome'] },
-    { name: 'note', indexs: ['_taskId'] },
-    { name: 'time', indexs: ['_taskId'] }
+    { name: models.task, indexs: ['_status', '_nome'], autoIncrement: true },
+    { name: models.note, indexs: ['_taskId'], autoIncrement: true },
+    { name: models.time, indexs: ['_taskId'], autoIncrement: true },
+    { name: models.config, indexs: [], autoIncrement: false, key: '_key' }
+
 ]
 const version = 1
 const dbName = 'tasktime'
@@ -43,7 +47,13 @@ export class ConnectionFactory {
                 e.target.result.deleteObjectStore(store.name)
             }
 
-            const object = e.target.result.createObjectStore(store.name, { autoIncrement: true });
+            let object = null;
+
+            if (store.autoIncrement) {
+                object = e.target.result.createObjectStore(store.name, { autoIncrement: true });
+            } else {
+                object = e.target.result.createObjectStore(store.name, { keyPath: store.key });
+            }
 
             store.indexs.forEach(i => {
                 object.createIndex(i, i, { unique: false })

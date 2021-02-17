@@ -3,7 +3,9 @@
 		<v-card-title>
 			<v-row dense no-gutters justify="space-between">
 				<v-col cols="10">
-					<div class="text-truncate subtitle-1 font-weight-medium">{{ task.codigo }} - {{ task.nome }}</div>
+					<div class="text-truncate subtitle-1 font-weight-medium">
+						{{ task.codigo }} - {{ task.nome }}
+					</div>
 				</v-col>
 				<v-col cols="auto">
 					<v-btn icon :color="task.color" @click="excluir(task.id)">
@@ -11,9 +13,19 @@
 					</v-btn>
 				</v-col>
 			</v-row>
+			<v-row dense>
+				<v-col cols="12">
+					<div class="body-2 font-weight-black">Tempo total {{ somaTempo }}</div>
+				</v-col>
+			</v-row>
 		</v-card-title>
 		<v-card-actions>
-			<v-btn color="orange lighten-2" class="subtitle-2" text @click="show = !show">
+			<v-btn
+				color="orange lighten-2"
+				class="subtitle-2"
+				text
+				@click="show = !show"
+			>
 				Histórico
 			</v-btn>
 			<v-spacer></v-spacer>
@@ -45,10 +57,12 @@ export default {
 
 	data: () => ({
 		show: false,
+		somaTempo: "",
 	}),
 
 	methods: {
 		...mapActions("task", ["ActionDeleteTask"]),
+		...mapActions("history", ["ActionSomaTimes"]),
 		excluir(id) {
 			this.$confirm({
 				title: "Confirme!",
@@ -71,6 +85,12 @@ export default {
 				},
 			});
 		},
+	},
+
+	mounted() {
+		this.ActionSomaTimes(this.task.id).then((result) => {
+			this.somaTempo = result;
+		});
 	},
 };
 </script>

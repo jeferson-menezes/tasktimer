@@ -48,9 +48,14 @@
 					class="font-weight-light"
 				>
 					<v-col cols="auto">
-						{{ (task || {}).codigo || null }} -
-						{{ (task || {}).nome || null }}
+						{{ task.codigo }} -
+						{{ task.nome }}
 					</v-col>
+				</v-row>
+				<v-row justify="center" align="center">
+					<div class="body-2 font-weight-medium">
+						{{ activeSomaTime }}
+					</div>
 				</v-row>
 			</v-card-subtitle>
 		</v-card>
@@ -106,6 +111,8 @@
 
 <script>
 import moment from "moment";
+import { segundosParaTempo } from "../helper/timer-helper";
+import { mapActions, mapState } from "vuex";
 
 export default {
 	name: "Timer",
@@ -148,7 +155,7 @@ export default {
 		stop() {
 			this.running = false;
 			clearInterval(this.idTimer);
-			const tempo = this.segundoToTempo();
+			const tempo = segundosParaTempo(this.segundos);
 			this.$emit("timer:stop", { tempo, inicio: this.inicio });
 
 			this.zerar();
@@ -161,17 +168,11 @@ export default {
 		},
 
 		atualizaView() {
-			let tempo = this.segundoToTempo();
+			let tempo = segundosParaTempo(this.segundos);
 			tempo = tempo.split(":");
 			this.value.hora = tempo[0];
 			this.value.minuto = tempo[1];
 			this.value.segundo = tempo[2];
-		},
-		segundoToTempo() {
-			return moment()
-				.startOf("day")
-				.seconds(this.segundos)
-				.format("HH:mm:ss");
 		},
 
 		zerar() {
@@ -180,6 +181,7 @@ export default {
 			this.segundos = null;
 			this.idTimer = null;
 			this.running = false;
+			this.somaTempo = "00:00:00";
 			this.value.hora = "00";
 			this.value.minuto = "00";
 			this.value.segundo = "00";
@@ -191,13 +193,11 @@ export default {
 	},
 
 	computed: {
+		...mapState('home',['activeSomaTime']),
 		show() {
-			if (this.task && this.task.hasOwnProperty("_nome")) {
-				return true;
-			} else {
-				return false;
-			}
+			return !!this.task && this.task.hasOwnProperty("_nome");
 		},
 	},
+
 };
 </script>

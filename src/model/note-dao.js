@@ -110,6 +110,36 @@ export class NoteDao {
         })
     }
 
+    
+    totalNotes(taskId) {
+
+        return new Promise((resolve, reject) => {
+            const store = this._connection
+                .transaction([this._store], 'readwrite')
+                .objectStore(this._store)
+
+            const index = store.index('_taskId')
+
+            const request = index.openCursor(IDBKeyRange.only(taskId))
+
+            let total = 0
+
+            request.onsuccess = e => {
+                const cursor = e.target.result
+                if (cursor) {
+                    total++
+                    cursor.continue()
+                } else {
+                    resolve(total)
+                }
+            }
+
+            request.onerror = e => {
+                reject('Houve um erro')
+            }
+        })
+    }
+
     _createNote(note) {
         return new Note(note._texto, note._data, note._taskId, note._id)
     }
