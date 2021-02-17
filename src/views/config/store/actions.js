@@ -18,7 +18,6 @@ export const ActionGetThemeDark = async ({ dispatch, commit }) => {
 export const ActionSetThemeDark = async ({ commit }, payload) => {
     return new ConfigDao(await ConnectionFactory.getConnection())
         .set(payload).then(res =>{
-            console.log(res);
             commit(types.SET_THEME_DARK, res.value)
         })
 }

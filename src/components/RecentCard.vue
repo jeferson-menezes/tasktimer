@@ -13,8 +13,10 @@
 						<v-icon dark> mdi-play </v-icon>
 					</v-btn>
 				</v-list-item-avatar>
-				<v-list-item-title class="font-weight-light">
-					{{ task.nome }}
+				<v-list-item-title :class="task.color">
+					<div class="font-weight-light text-truncate">
+						{{ task.codigo }} - {{ task.nome }}
+					</div>
 				</v-list-item-title>
 				<v-row justify="end" align="center">
 					<v-badge overlap right color="amber darken-4" class="mb-1">

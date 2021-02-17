@@ -1,5 +1,5 @@
 'use strict'
-import { app, BrowserWindow, ipcMain, protocol, remote, Menu } from 'electron'
+import { app, BrowserWindow, ipcMain, protocol, remote, Menu, shell } from 'electron'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 const path = require("path");
@@ -12,11 +12,11 @@ protocol.registerSchemesAsPrivileged([
 let win = null
 
 async function createWindow() {
-  console.log('---------------------',__dirname);
+  console.log('---------------------', __dirname);
   console.log(path.join(path.parse(__dirname).dir, 'preload.js'));
   win = new BrowserWindow({
-    width: 1000,
-    height: 800,
+    width: 400,
+    height: 600,
     frame: true,
     // titleBarStyle: "hidden", // add this li
     webPreferences: {
@@ -31,9 +31,10 @@ async function createWindow() {
   win.removeMenu()
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
+
     await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
 
-    if (!process.env.IS_TEST) win.webContents.openDevTools()
+    // if (!process.env.IS_TEST) win.webContents.openDevTools()
 
   } else {
     createProtocol('app')
@@ -41,10 +42,13 @@ async function createWindow() {
   }
 }
 
+
+ipcMain.on('open-link', (event, link) => {
+  shell.openExternal(link)
+})
+
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
+  app.quit()
 })
 
 app.on('activate', () => {

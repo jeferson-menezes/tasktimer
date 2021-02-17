@@ -53,7 +53,10 @@
 					</v-col>
 				</v-row>
 				<v-row justify="center" align="center">
-					<div class="body-2 font-weight-medium">
+					<div
+						class="body-2 font-weight-medium pr-2 pl-2"
+						:class="[task.bg, task.color]"
+					>
 						{{ activeSomaTime }}
 					</div>
 				</v-row>
@@ -112,7 +115,7 @@
 <script>
 import moment from "moment";
 import { segundosParaTempo } from "../helper/timer-helper";
-import { mapActions, mapState } from "vuex";
+import { mapState } from "vuex";
 
 export default {
 	name: "Timer",
@@ -193,11 +196,10 @@ export default {
 	},
 
 	computed: {
-		...mapState('home',['activeSomaTime']),
+		...mapState("home", ["activeSomaTime"]),
 		show() {
 			return !!this.task && this.task.hasOwnProperty("_nome");
 		},
 	},
-
 };
 </script>

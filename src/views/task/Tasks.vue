@@ -2,7 +2,7 @@
 	<v-row>
 		<v-col cols="12">
 			<v-alert tile dense text color="orange">
-				<div class="title text-center pb-2">Ativo</div>
+				<div class="title text-center pb-2">Active</div>
 				<draggable
 					v-model="actives"
 					class="row"
@@ -19,7 +19,7 @@
 		</v-col>
 		<v-col cols="6">
 			<v-alert tile dense text color="blue" min-height="100%">
-				<div class="title text-center pb-2">Recentes</div>
+				<div class="title text-center pb-2">Recent</div>
 				<draggable
 					v-model="recents"
 					class="row kanban-column"
@@ -36,7 +36,7 @@
 		</v-col>
 		<v-col cols="6">
 			<v-alert tile dense text color="green" min-height="100%">
-				<div class="title text-center pb-2">Concluído</div>
+				<div class="title text-center pb-2">Finished</div>
 
 				<draggable
 					v-model="finisheds"

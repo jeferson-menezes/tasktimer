@@ -4,7 +4,7 @@
 		:timeout="timeout"
 		:value="true"
 		top
-		color="teal accent-3"
+		color="success"
 		elevation="24"
 	>
 		{{ text }}
@@ -14,11 +14,15 @@
 <script>
 export default {
 	name: "MessageSnack",
-
+// info
+// error
+// warning
+// success
 	data: () => ({
 		snackbar: false,
 		text: "",
-		timeout: 1000,
+		timeout: 5000,
+		color: 'info'
 	}),
 
 	created() {
@@ -26,6 +30,7 @@ export default {
 			this.snackbar = true;
 			this.timeout = payload.timeout;
 			this.text = payload.text;
+			this.color = payload.color || 'info'
 		});
 	},
 };

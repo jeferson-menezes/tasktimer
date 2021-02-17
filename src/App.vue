@@ -11,6 +11,7 @@
 		<v-navigation-drawer app v-model="drawer"> </v-navigation-drawer>
 
 		<v-app-bar app dense elevation="0">
+			<Sobre/>
 			<v-spacer></v-spacer>
 
 			<v-btn icon @click="updateThemeDark(!themeDark)">
@@ -56,6 +57,7 @@
 import TaskForm from "./components/TaskForm";
 import NoteForm from "./components/NoteForm";
 import MessageSnack from "./components/MessageSnack";
+import Sobre from './components/Sobre'
 import { closeWindow, maximizeWindow, minimizeWindow } from "./renderer";
 import { mapActions, mapState } from "vuex";
 import { Config, KeyConfig } from "./model/config";
@@ -63,7 +65,7 @@ import { Config, KeyConfig } from "./model/config";
 export default {
 	name: "App",
 
-	components: { TaskForm, MessageSnack, NoteForm },
+	components: { TaskForm, MessageSnack, NoteForm , Sobre},
 
 	data: () => ({
 		drawer: false,

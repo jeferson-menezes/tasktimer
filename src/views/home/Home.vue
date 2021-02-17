@@ -1,6 +1,5 @@
 <template>
 	<v-container>
-
 		<v-row align="center" justify="center">
 			<Timer
 				:task="activeTask"
@@ -22,7 +21,6 @@
 				></RecentCard>
 			</v-col>
 		</v-row>
-
 	</v-container>
 </template>
 
@@ -36,7 +34,6 @@ import pauseIcom from "../../assets/pause.png";
 import RecentCard from "../../components/RecentCard";
 
 export default {
-
 	name: "Home",
 
 	components: { Timer, RecentCard },
@@ -59,7 +56,7 @@ export default {
 			"ActionFilterRecenteTasks",
 			"ActionGetActive",
 			"ActionUpdateActives",
-			"ActionActiveSomaTimes"
+			"ActionActiveSomaTimes",
 		]),
 
 		...mapActions("history", ["ActionSaveTime"]),
@@ -90,7 +87,7 @@ export default {
 
 				await this.ActionSaveTime(time);
 
-				await this.ActionActiveSomaTimes(this.activeTask.id)
+				await this.ActionActiveSomaTimes(this.activeTask.id);
 
 				this.$root.$emit("message::show", {
 					timeout: 2000,

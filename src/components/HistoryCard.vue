@@ -1,21 +1,21 @@
 <template>
 	<v-card :color="task.bg" class="mt-2">
 		<v-card-title>
-			<v-row dense no-gutters justify="space-between">
-				<v-col cols="10">
-					<div class="text-truncate subtitle-1 font-weight-medium">
+			<v-row align="start" dense justify="space-between">
+				<v-col cols="auto">
+					<div class="text-truncate subtitle-1 font-weight-medium" :class="task.color">
 						{{ task.codigo }} - {{ task.nome }}
 					</div>
 				</v-col>
 				<v-col cols="auto">
 					<v-btn icon :color="task.color" @click="excluir(task.id)">
-						<v-icon>mdi-delete</v-icon>
+						<v-icon >mdi-delete</v-icon>
 					</v-btn>
 				</v-col>
 			</v-row>
 			<v-row dense>
 				<v-col cols="12">
-					<div class="body-2 font-weight-black">Tempo total {{ somaTempo }}</div>
+					<div class="body-2 font-weight-black" :class="task.color">Tempo total {{ somaTempo }}</div>
 				</v-col>
 			</v-row>
 		</v-card-title>

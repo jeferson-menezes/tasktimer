@@ -21,7 +21,7 @@
 				</v-tab>
 
 				<v-tab href="#tab-3">
-					<small> concluido </small>
+					<small> finished </small>
 					<v-icon>mdi-text-box-check-outline </v-icon>
 				</v-tab>
 			</v-tabs>

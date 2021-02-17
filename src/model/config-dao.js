@@ -10,7 +10,6 @@ export class ConfigDao {
 
 
     get(key) {
-        console.log(key);
         return new Promise((resolve, reject) => {
 
             const store = this._connection
@@ -45,7 +44,6 @@ export class ConfigDao {
             const request = store.put(config)
 
             request.onsuccess = e => {
-                // console.log(e.target);
                 resolve(config)
             }
 

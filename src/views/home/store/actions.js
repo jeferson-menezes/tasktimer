@@ -9,7 +9,9 @@ export const ActionGetActive = async ({ dispatch, commit }) => {
         .detalharAtivo()
         .then(doc => {
             commit(types.SET_ACTIVE_TASK, doc)
-            dispatch('ActionActiveSomaTimes', doc.id)
+            if (doc) {
+                dispatch('ActionActiveSomaTimes', doc.id)
+            }
             return doc;
         })
 }
